@@ -1,8 +1,7 @@
 /*
    Students: Esmeralda Amado, Cristian Hernandez Juan, Gustavo Trejo
    Class: CS 4440 - Operating Systems
-   Description: Bounded-buffer producer/consumer using POSIX threads,
-                mutexes, and semaphores.
+   Description: producer/consumer problem
 */
 
 // import libraries
