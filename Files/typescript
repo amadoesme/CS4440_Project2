@@ -1,0 +1,622 @@
+Script started on Sat Jul 25 22:07:47 2026
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP ~ % [K[?2004hggit c lone     lone httpd s;//   ://github.com/amadoesme/ [KCCS4440_p Project2.git[?2004l
+fatal: destination path 'CS4440_Project2' already exists and is not an empty directory.
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP ~ % [K[?2004h[7mcd CS4440_Project2[27m[18D[27mc[27md[27m [27mC[27mS[27m4[27m4[27m4[27m0[27m_[27mP[27mr[27mo[27mj[27me[27mc[27mt[27m2[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP CS4440_Project2 % [K[?2004hlls[?2004l
+Files		Pr2README.txt
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP CS4440_Project2 % [K[?2004h[7mcd CS4440_Project2/Files[27m[24D[27mc[27md[27m [27mC[27mS[27m4[27m4[27m4[27m0[27m_[27mP[27mr[27mo[27mj[27me[27mc[27mt[27m2[27m/[27mF[27mi[27ml[27me[27ms[?2004l
+cd: no such file or directory: CS4440_Project2/Files
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP CS4440_Project2 % [K[?2004h[7mcd Files[27m[8D[27mc[27md[27m [27mF[27mi[27ml[27me[27ms[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7mpwd[27m
+[7mls[27m[K[A[43C[27mp[27mw[27md[1B[27ml[27ms[?2004l
+/Users/esmeraldaamado/CS4440_Project2/Files
+Makefile		mh.c			typescript
+airline.c		producer_consumer.c	typescript.txt
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004hlls[?2004l
+Makefile		mh.c			typescript
+airline.c		producer_consumer.c	typescript.txt
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004hmmake ce e lean[?2004l
+rm -f airline mh producer_consumer
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004hmmake[?2004l
+gcc -Wall -Wextra -g -std=gnu11 -o airline airline.c -pthread -lrt
+[1mairline.c:411:9: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+  411 |         sem_init(&passengers[i].baggage_done, 0, 0);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+   55 | int sem_init(sem_t *, int, unsigned int) __deprecated;[0m
+      | [0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:412:9: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+  412 |         sem_init(&passengers[i].security_done, 0, 0);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+   55 | int sem_init(sem_t *, int, unsigned int) __deprecated;[0m
+      | [0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:413:9: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+  413 |         sem_init(&passengers[i].boarding_done, 0, 0);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+   55 | int sem_init(sem_t *, int, unsigned int) __deprecated;[0m
+      | [0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:455:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  455 |         sem_destroy(&passengers[i].baggage_done);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:456:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  456 |         sem_destroy(&passengers[i].security_done);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:457:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  457 |         sem_destroy(&passengers[i].boarding_done);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m6 warnings generated.
+ld: library 'rt' not found
+clang: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make: *** [airline] Error 1
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7mgcc -Wall -Wextra -g -std=gnu11 -o [7ma[7mirline airline.c -pthread[27m[K[A[19C[27mg[27mc[27mc[27m [27m-[27mW[27ma[27ml[27ml[27m [27m-[27mW[27me[27mx[27mt[27mr[27ma[27m [27m-[27mg[27m [27m-[27ms[27mt[27md[27m=[27mg[27mn[27mu[27m1[27m1[27m [27m-[27mo[27m a[27mi[27mr[27ml[27mi[27mn[27me[27m [27ma[27mi[27mr[27ml[27mi[27mn[27me[27m.[27mc[27m [27m-[27mp[27mt[27mh[27mr[27me[27ma[27md[?2004l
+[1mairline.c:411:9: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+  411 |         sem_init(&passengers[i].baggage_done, 0, 0);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+   55 | int sem_init(sem_t *, int, unsigned int) __deprecated;[0m
+      | [0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:412:9: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+  412 |         sem_init(&passengers[i].security_done, 0, 0);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+   55 | int sem_init(sem_t *, int, unsigned int) __deprecated;[0m
+      | [0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:413:9: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+  413 |         sem_init(&passengers[i].boarding_done, 0, 0);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+   55 | int sem_init(sem_t *, int, unsigned int) __deprecated;[0m
+      | [0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:455:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  455 |         sem_destroy(&passengers[i].baggage_done);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:456:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  456 |         sem_destroy(&passengers[i].security_done);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:457:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  457 |         sem_destroy(&passengers[i].boarding_done);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m6 warnings generated.
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004hmmake c le  lean[?2004l
+rm -f airline mh producer_consumer
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004hmmake[?2004l
+gcc -Wall -Wextra -g -std=gnu11 -o airline airline.c -pthread -lrt
+[1mairline.c:411:9: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+  411 |         sem_init(&passengers[i].baggage_done, 0, 0);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+   55 | int sem_init(sem_t *, int, unsigned int) __deprecated;[0m
+      | [0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:412:9: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+  412 |         sem_init(&passengers[i].security_done, 0, 0);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+   55 | int sem_init(sem_t *, int, unsigned int) __deprecated;[0m
+      | [0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:413:9: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+  413 |         sem_init(&passengers[i].boarding_done, 0, 0);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+   55 | int sem_init(sem_t *, int, unsigned int) __deprecated;[0m
+      | [0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:455:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  455 |         sem_destroy(&passengers[i].baggage_done);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:456:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  456 |         sem_destroy(&passengers[i].security_done);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:457:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  457 |         sem_destroy(&passengers[i].boarding_done);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m6 warnings generated.
+ld: library 'rt' not found
+clang: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make: *** [airline] Error 1
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7mnano Makefile[27m[13D[27mn[27ma[27mn[27mo[27m [27mM[27ma[27mk[27me[27mf[27mi[27ml[27me[?2004l
+[?1049h[1;24r[1;1H[J[7m  UW PICO 5.09                           New Buffer                             [27m[23;1H[K[24;1H[K[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mO[27m WriteOut  [7m^[27m[7mR[27m Read File [7m^[27m[7mY[27m Prev Pg   [7m^[27m[7mK[27m Cut Text  [7m^[27m[7mC[27m Cur Pos   [K[24;1H[7m^[27m[7mX[27m Exit      [7m^[27m[7mJ[27m Justify   [7m^[27m[7mW[27m Where is  [7m^[27m[7mV[27m Next Pg   [7m^[27m[7mU[27m UnCut Text[7m^[27m[7mT[27m To Spell  [K[3;1H[22;1H                                                                                [22;33H[7m[ Reading file ][27m[22;1H                                                                                [22;17H[7m[ File doesn't end with newline.  Adding one. ][27m[22;1H                                                                                [22;32H[7m[ Read 39 lines ][27m[1;1H[J[7m  UW PICO 5.09                         File: Makefile                           [27m[3;1H# Students: Esmeralda Amado, Cristian Hernandez Juan, Gustavo Trejo[4;1H# Class: CS 4440-01 (Operating Systems)[5;1H# A single makefile that compiles all C files in the current directory and crea$[6;1H# an executable for each C file.[9;1H# C compiler and flags for warnings and debugging[10;1HCC = gcc[11;1HCFLAGS  = -Wall -Wextra -g -std=gnu11[14;1HLDFLAGS = -pthread -lrt[16;1H# Finds all c files in the current directory.[17;1HSOURCES = $(wildcard *.c)[19;1H# executables have the same name as the .c file but without the extension[20;1HPROGRAMS = $(SOURCES:.c=)[23;1H[K[24;1H[K[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mO[27m WriteOut  [7m^[27m[7mR[27m Read File [7m^[27m[7mY[27m Prev Pg   [7m^[27m[7mK[27m Cut Text  [7m^[27m[7mC[27m Cur Pos   [K[24;1H[7m^[27m[7mX[27m Exit      [7m^[27m[7mJ[27m Justify   [7m^[27m[7mW[27m Where is  [7m^[27m[7mV[27m Next Pg   [7m^[27m[7mU[27m UnCut Text[7m^[27m[7mT[27m To Spell  [K[3;1H[4;1H[5;1H[6;1H[7;1H[8;1H[9;1H[9;2H[9;3H[10;3H[11;3H[12;1H[13;1H[14;1H[14;2H[14;3H[14;4H[14;5H[14;6H[14;7H[14;8H[14;9H[14;10H[14;11H[14;12H[14;13H[14;14H[14;15H[14;16H[14;17H[14;18H[14;19H[14;20H[14;21H[14;22H[14;23H[1;36H[7mFile: Makefile                     Modified[27m[14;22Ht [14;22H[14;21Ht [14;21H[14;22H[14;21H [14;21H[14;20H [14;20H[14;19H[14;18H [14;18Hd[15;1H[16;19H[17;19H[18;1H[22;1H                                                                                [22;1H[7mFile Name to write :                                                            [22;22H[27m[23;15H[7mT[27m  To Files                                                     [K[24;2H[7mC[27m Cancel    [7mT[27m[7mA[27m[7mB[27m Complete                                                     [K[7m[22;22HMakefile                                                   [22;30H[27m[22;1H                                                                                [22;1H[7mFile Name to write :                                                            [22;22H[27m[7mMakefile                                                   [22;30H[27m[22;1H                                                                                [22;1H[7mFile Name to write :                                                            [22;22H[27m[7mMakefile                                                   [22;30HT                                                  [22;31H[22;30H                                                   [22;30H[27m[22;1H                                                                                [22;16H[7m[ Building file list of /Users/esmeraldaamado... ][27m[1;1H[K[2;1H[K[3;1H[K[4;1H[K[5;1H[K[6;1H[K[7;1H[K[8;1H[K[9;1H[K[10;1H[K[11;1H[K[12;1H[K[13;1H[K[14;1H[K[15;1H[K[16;1H[K[17;1H[K[18;1H[K[19;1H[K[20;1H[K[21;1H[K[22;1H[K[23;1H[K[24;1H[K[1;1H[7m  UW PICO 5.09               BROWSER    Dir: /Users/esmeraldaamado              [27m[3;1H[7m.                                   (SELECT dir)[27m[4;1H..                                  (parent dir)[5;1HApplications                               (dir)[6;1HCS3220-Assignment2                         (dir)[7;1HCS3220-Dolphins                            (dir)[8;1HCS3220-Week4                               (dir)[9;1HCS3338-second-project                      (dir)[10;1HCS3338-second-project 2                    (dir)[11;1HCS3338-second-project 3                    (dir)[12;1HCS3338-second-project 4                    (dir)[13;1HCS4440_Project2                            (dir)[14;1HDesktop                                    (dir)[15;1HDocuments                                  (dir)[16;1HDownloads                                  (dir)[17;1HDropbox                                    (dir)[18;1HIdeaProjects                               (dir)[19;1HIdeaSnapshots                              (dir)[20;1HLibrary                                    (dir)[21;1HMovies                                     (dir)[23;1H[7m?[27m Get Help   [7mE[27m Exit Brwsr              [7m-[27m   Prev Pg  [7mD[27m Delete     [7mC[27m Copy       [K[24;14H[7mS[27m [Select]   [7mW[27m Where is   [7mS[27m[7mp[27m[7mc[27m Next Pg  [7mR[27m Rename     [7mA[27m Add        [K[22;1H[3;1H.                                   (SELECT dir)[4;1H[7m..                                  (parent dir)[27m[22;1H[4;1H..                                  (parent dir)[5;1H[7mApplications                               (dir)[27m[22;1H[5;1HApplications                               (dir)[6;1H[7mCS3220-Assignment2                         (dir)[27m[22;1H[6;1HCS3220-Assignment2                         (dir)[7;1H[7mCS3220-Dolphins                            (dir)[27m[22;1H[7;1HCS3220-Dolphins                            (dir)[8;1H[7mCS3220-Week4                               (dir)[27m[22;1H[8;1HCS3220-Week4                               (dir)[9;1H[7mCS3338-second-project                      (dir)[27m[22;1H[9;1HCS3338-second-project                      (dir)[10;1H[7mCS3338-second-project 2                    (dir)[27m[22;1H[10;1HCS3338-second-project 2                    (dir)[11;1H[7mCS3338-second-project 3                    (dir)[27m[22;1H[11;1HCS3338-second-project 3                    (dir)[12;1H[7mCS3338-second-project 4                    (dir)[27m[22;1H[12;1HCS3338-second-project 4                    (dir)[13;1H[7mCS4440_Project2                            (dir)[27m[22;1H                                                                                [22;8H[7m[ Building file list of /Users/esmeraldaamado/CS4440_Project2... ][27m[1;1H[K[2;1H[K[3;1H[K[4;1H[K[5;1H[K[6;1H[K[7;1H[K[8;1H[K[9;1H[K[10;1H[K[11;1H[K[12;1H[K[13;1H[K[14;1H[K[15;1H[K[16;1H[K[17;1H[K[18;1H[K[19;1H[K[20;1H[K[21;1H[K[22;1H[K[23;1H[K[24;1H[K[1;1H[7m  UW PICO 5.09             BROWSER    Dir: /Users/esmeraldaamado/CS4440_Project2[27m[3;1H[7m.          (SELECT dir)[27m[3;26H..         (parent dir)[3;51HFiles             (dir)[4;1HPr2README.txt    1.0 KB[23;1H[7m?[27m Get Help   [7mE[27m Exit Brwsr              [7m-[27m   Prev Pg  [7mD[27m Delete     [7mC[27m Copy       [K[24;14H[7mS[27m [Select]   [7mW[27m Where is   [7mS[27m[7mp[27m[7mc[27m Next Pg  [7mR[27m Rename     [7mA[27m Add        [K[22;1H                                                                                [22;8H[7m[ Select/View " .. parent dir" to return to previous directory. ][27m[22;1H[1;1H[J[7m  UW PICO 5.09                     File: Makefile                     Modified  [27m[3;1H# Students: Esmeralda Amado, Cristian Hernandez Juan, Gustavo Trejo[4;1H# Class: CS 4440-01 (Operating Systems)[5;1H# A single makefile that compiles all C files in the current directory and crea$[6;1H# an executable for each C file.[9;1H# C compiler and flags for warnings and debugging[10;1HCC = gcc[11;1HCFLAGS  = -Wall -Wextra -g -std=gnu11[14;1HLDFLAGS = -pthread[16;1H# Finds all c files in the current directory.[17;1HSOURCES = $(wildcard *.c)[19;1H# executables have the same name as the .c file but without the extension[20;1HPROGRAMS = $(SOURCES:.c=)[23;1H[K[24;1H[K[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mO[27m WriteOut  [7m^[27m[7mR[27m Read File [7m^[27m[7mY[27m Prev Pg   [7m^[27m[7mK[27m Cut Text  [7m^[27m[7mC[27m Cur Pos   [K[24;1H[7m^[27m[7mX[27m Exit      [7m^[27m[7mJ[27m Justify   [7m^[27m[7mW[27m Where is  [7m^[27m[7mV[27m Next Pg   [7m^[27m[7mU[27m UnCut Text[7m^[27m[7mT[27m To Spell  [K[18;1H[22;1H                                                                                [22;1H[7mFile Name to write :                                                            [22;22H[27m[23;15H[7mT[27m  To Files                                                     [K[24;2H[7mC[27m Cancel    [7mT[27m[7mA[27m[7mB[27m Complete                                                     [K[7m[22;22H/Users/esmeraldaamado/CS4440_Project2/Makefile             [22;68H[27m[22;1H                                                                                [22;1H[7mFile Name to write :                                                            [22;22H[27m[7m/Users/esmeraldaamado/CS4440_Project2/Makefile             [22;68H[27m[22;1H                                                                                [22;1H[7mFile Name to write :                                                            [22;22H[27m[7m/Users/esmeraldaamado/CS4440_Project2/Makefile             [22;68H?            [22;69H[27m[22;1H                                                                                [22;34H[7m[ Writing... ][27m[22;1H                                                                                [22;13H[7m[ Cannot open file for writing: Illegal byte sequence ][27m[23;1H[K[24;1H[K[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mO[27m WriteOut  [7m^[27m[7mR[27m Read File [7m^[27m[7mY[27m Prev Pg   [7m^[27m[7mK[27m Cut Text  [7m^[27m[7mC[27m Cur Pos   [K[24;1H[7m^[27m[7mX[27m Exit      [7m^[27m[7mJ[27m Justify   [7m^[27m[7mW[27m Where is  [7m^[27m[7mV[27m Next Pg   [7m^[27m[7mU[27m UnCut Text[7m^[27m[7mT[27m To Spell  [K[18;1H[23;1H             [7mY[27m Yes                                                            [K[24;2H[7mC[27m Cancel    [7mN[27m No                                                             [K[22;1H                                                                                [22;1H[7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [22;62H[27m[7mYes[27m[22;1H                                                                                [22;1H[7mFile Name to write :                                                            [22;22H[27m[23;1H[7m^[27m[7mG[27m Get Help  [7m^[27m[7mT[27m  To Files                                                     [K[24;14H[7mT[27m[7mA[27m[7mB[27m Complete                                                     [K[7m[22;22HMakefile                                                   [22;30H[27m[22;1H                                                                                [22;34H[7m[ Writing... ][27m[22;1H                                                                                [22;32H[7m[ Wrote 39 lines ][27m[23;1H[K[24;1H[K[?1049l[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7mcat Makefile[27m[12D[27mc[27ma[27mt[27m [27mM[27ma[27mk[27me[27mf[27mi[27ml[27me[?2004l
+# Students: Esmeralda Amado, Cristian Hernandez Juan, Gustavo Trejo
+# Class: CS 4440-01 (Operating Systems)
+# A single makefile that compiles all C files in the current directory and creates
+# an executable for each C file. 
+
+
+# C compiler and flags for warnings and debugging  
+CC = gcc
+CFLAGS  = -Wall -Wextra -g -std=gnu11
+
+
+LDFLAGS = -pthread
+
+# Finds all c files in the current directory. 
+SOURCES = $(wildcard *.c)
+
+# executables have the same name as the .c file but without the extension
+PROGRAMS = $(SOURCES:.c=)
+
+# Builds every program that was found
+all: $(PROGRAMS)
+
+# Rule for converting .c into exe of the same name 
+%: %.c
+	$(CC) $(CFLAGS) -o $@ $< $(LDFLAGS)
+
+
+# Prints the sources and executables that were discovered 
+list:
+	@echo "Sources found:  $(SOURCES)"
+	@echo "Programs built: $(PROGRAMS)"
+
+
+#Removes the built executables so the next build starts fresh, rm ignores the error when nothing has been built yet 
+clean:
+	-rm -f $(PROGRAMS)
+
+
+.PHONY: all clean list
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004hMMAKE   M  mmake clean[?2004l
+rm -f airline mh producer_consumer
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004hmmake[?2004l
+gcc -Wall -Wextra -g -std=gnu11 -o airline airline.c -pthread
+[1mairline.c:411:9: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+  411 |         sem_init(&passengers[i].baggage_done, 0, 0);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+   55 | int sem_init(sem_t *, int, unsigned int) __deprecated;[0m
+      | [0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:412:9: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+  412 |         sem_init(&passengers[i].security_done, 0, 0);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+   55 | int sem_init(sem_t *, int, unsigned int) __deprecated;[0m
+      | [0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:413:9: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+  413 |         sem_init(&passengers[i].boarding_done, 0, 0);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+   55 | int sem_init(sem_t *, int, unsigned int) __deprecated;[0m
+      | [0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:455:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  455 |         sem_destroy(&passengers[i].baggage_done);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:456:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  456 |         sem_destroy(&passengers[i].security_done);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mairline.c:457:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  457 |         sem_destroy(&passengers[i].boarding_done);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m6 warnings generated.
+gcc -Wall -Wextra -g -std=gnu11 -o mh mh.c -pthread
+[1mmh.c:154:9: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+  154 |     if (sem_init(&motherSemaphore, 0, 1) != 0){[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+   55 | int sem_init(sem_t *, int, unsigned int) __deprecated;[0m
+      | [0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mmh.c:160:9: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+  160 |     if (sem_init(&fatherSemaphore, 0, 0) != 0){[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+   55 | int sem_init(sem_t *, int, unsigned int) __deprecated;[0m
+      | [0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mmh.c:162:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  162 |         sem_destroy(&motherSemaphore);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mmh.c:172:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  172 |         sem_destroy(&motherSemaphore);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mmh.c:173:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  173 |         sem_destroy(&fatherSemaphore);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mmh.c:180:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  180 |         sem_destroy(&motherSemaphore);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mmh.c:181:9: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  181 |         sem_destroy(&fatherSemaphore);[0m
+      | [0;1;32m        ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mmh.c:191:5: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  191 |     sem_destroy(&motherSemaphore);[0m
+      | [0;1;32m    ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mmh.c:192:5: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  192 |     sem_destroy(&fatherSemaphore);[0m
+      | [0;1;32m    ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m9 warnings generated.
+gcc -Wall -Wextra -g -std=gnu11 -o producer_consumer producer_consumer.c -pthread
+[1mproducer_consumer.c:41:13: [0m[0;1;35mwarning: [0m[1m'sem_getvalue' is deprecated [-Wdeprecated-declarations][0m
+   41 |         if (sem_getvalue(&emptySlots, &value) == 0 && value == 0)[0m
+      | [0;1;32m            ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:54:56: [0m[0;1;30mnote: [0m'sem_getvalue' has been explicitly marked deprecated here[0m
+   54 | int sem_getvalue(sem_t * __restrict, int * __restrict) __deprecated;[0m
+      | [0;1;32m                                                       ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mproducer_consumer.c:32:22: [0m[0;1;35mwarning: [0m[1munused parameter 'arg' [-Wunused-parameter][0m
+   32 | void *producer(void *arg)[0m
+      | [0;1;32m                     ^
+[0m[1mproducer_consumer.c:77:13: [0m[0;1;35mwarning: [0m[1m'sem_getvalue' is deprecated [-Wdeprecated-declarations][0m
+   77 |         if (sem_getvalue(&fullSlots, &value) == 0 && value == 0)[0m
+      | [0;1;32m            ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:54:56: [0m[0;1;30mnote: [0m'sem_getvalue' has been explicitly marked deprecated here[0m
+   54 | int sem_getvalue(sem_t * __restrict, int * __restrict) __deprecated;[0m
+      | [0;1;32m                                                       ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mproducer_consumer.c:71:22: [0m[0;1;35mwarning: [0m[1munused parameter 'arg' [-Wunused-parameter][0m
+   71 | void *consumer(void *arg)[0m
+      | [0;1;32m                     ^
+[0m[1mproducer_consumer.c:116:5: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+  116 |     sem_init(&emptySlots, 0, BUFFER_SIZE);[0m
+      | [0;1;32m    ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+   55 | int sem_init(sem_t *, int, unsigned int) __deprecated;[0m
+      | [0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mproducer_consumer.c:117:5: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+  117 |     sem_init(&fullSlots, 0, 0);[0m
+      | [0;1;32m    ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+   55 | int sem_init(sem_t *, int, unsigned int) __deprecated;[0m
+      | [0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mproducer_consumer.c:134:5: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  134 |     sem_destroy(&emptySlots);[0m
+      | [0;1;32m    ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m[1mproducer_consumer.c:135:5: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+  135 |     sem_destroy(&fullSlots);[0m
+      | [0;1;32m    ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+   53 | int sem_destroy(sem_t *) __deprecated;[0m
+      | [0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h:214:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+  214 | #define __deprecated    __attribute__((__deprecated__))[0m
+      | [0;1;32m                                       ^
+[0m8 warnings generated.
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./producer_consumer[27m[19D[27m.[27m/[27mp[27mr[27mo[27md[27mu[27mc[27me[27mr[27m_[27mc[27mo[27mn[27ms[27mu[27mm[27me[27mr[?2004l
+Consumed:   | Buffer items: -1
+Consumed:   | Buffer items: -2
+Produced: A | Buffer items: -1
+Consumed:   | Buffer items: -2
+Produced: B | Buffer items: -1
+Produced: C | Buffer items: 0
+Produced: D | Buffer items: 1
+Produced: E | Buffer items: 2
+Consumed: D | Buffer items: 1
+Produced: F | Buffer items: 2
+Produced: G | Buffer items: 3
+Produced: H | Buffer items: 4
+Produced: I | Buffer items: 5
+Produced: J | Buffer items: 6
+Consumed: E | Buffer items: 5
+Produced: K | Buffer items: 6
+Produced: L | Buffer items: 7
+Produced: M | Buffer items: 8
+Produced: N | Buffer items: 9
+Produced: O | Buffer items: 10
+Consumed: F | Buffer items: 9
+Produced: P | Buffer items: 10
+Produced: Q | Buffer items: 11
+Produced: R | Buffer items: 12
+Produced: S | Buffer items: 13
+Produced: T | Buffer items: 14
+Consumed: Q | Buffer items: 13
+Produced: U | Buffer items: 14
+Produced: V | Buffer items: 15
+Produced: W | Buffer items: 16
+Produced: X | Buffer items: 17
+Produced: Y | Buffer items: 18
+Consumed: R | Buffer items: 17
+Produced: Z | Buffer items: 18
+Produced: A | Buffer items: 19
+Produced: B | Buffer items: 20
+Produced: C | Buffer items: 21
+Produced: D | Buffer items: 22
+Consumed: C | Buffer items: 21
+Produced: E | Buffer items: 22
+Produced: F | Buffer items: 23
+Produced: G | Buffer items: 24
+Produced: H | Buffer items: 25
+Consumed: D | Buffer items: 24
+Produced: I | Buffer items: 25
+Produced: J | Buffer items: 26
+Produced: K | Buffer items: 27
+Produced: L | Buffer items: 28
+Produced: M | Buffer items: 29
+Consumed: E | Buffer items: 28
+Produced: N | Buffer items: 29
+Produced: O | Buffer items: 30
+Produced: P | Buffer items: 31
+Produced: Q | Buffer items: 32
+Produced: R | Buffer items: 33
+Consumed: P | Buffer items: 32
+Produced: S | Buffer items: 33
+Produced: T | Buffer items: 34
+Produced: U | Buffer items: 35
+Produced: V | Buffer items: 36
+Produced: W | Buffer items: 37
+Consumed: Q | Buffer items: 36
+Produced: X | Buffer items: 37
+Consumed: R | Buffer items: 36
+Consumed: S | Buffer items: 35
+Consumed: T | Buffer items: 34
+Consumed: U | Buffer items: 33
+Consumed: V | Buffer items: 32
+Consumed: W | Buffer items: 31
+Consumed: X | Buffer items: 30
+Consumed: O | Buffer items: 29
+Consumed: P | Buffer items: 28
+Consumed: Q | Buffer items: 27
+Consumed: R | Buffer items: 26
+Consumed: S | Buffer items: 25
+Consumed: T | Buffer items: 24
+Consumed: U | Buffer items: 23
+Consumed: V | Buffer items: 22
+Consumed: W | Buffer items: 21
+Consumed: X | Buffer items: 20
+Consumed: O | Buffer items: 19
+Consumed: P | Buffer items: 18
+Consumed: Q | Buffer items: 17
+Consumed: R | Buffer items: 16
+Consumed: S | Buffer items: 15
+Consumed: T | Buffer items: 14
+Consumed: U | Buffer items: 13
+Consumed: V | Buffer items: 12
+Consumed: W | Buffer items: 11
+Consumed: X | Buffer items: 10
+Consumed: O | Buffer items: 9
+Consumed: P | Buffer items: 8
+Consumed: Q | Buffer items: 7
+Consumed: R | Buffer items: 6
+Consumed: S | Buffer items: 5
+Consumed: T | Buffer items: 4
+Consumed: U | Buffer items: 3
+Consumed: V | Buffer items: 2
+Consumed: W | Buffer items: 1
+Consumed: X | Buffer items: 0
+All items produced and consumed.
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./mh 2[27m[27m.[27m/[27mm[27mh[27m [27m2[?2004l
+sem_init(motherSemaphore) failed: Function not implemented
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./mh[27m[27m.[27m/[27mm[27mh[?2004l
+Usage: ./mh <numberOfDays>
+Example: ./mh 100
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./mh abc[27m[8D[27m.[27m/[27mm[27mh[27m [27ma[27mb[27mc[?2004l
+Error: number of days must be a positive whole number, but got "abc".
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./mh 0[27m[27m.[27m/[27mm[27mh[27m [27m0[?2004l
+Error: number of days must be a positive whole number, but got "0".
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./airline 10 2 3 2[27m[18D[27m.[27m/[27ma[27mi[27mr[27ml[27mi[27mn[27me[27m [27m1[27m0[27m [27m2[27m [27m3[27m [27m2[?2004l
+Passenger #1 arrived at the terminal.
+Passenger #1 is waiting at baggage processing for a handler.
+Passenger #1 is waiting to be screened by a screener.
+Passenger #1 is waiting to board the plane by an attendant.
+Passenger #1 has been seated and relaxes.
+Passenger #6 arrived at the terminal.
+Passenger #6 is waiting at baggage processing for a handler.
+Passenger #6 is waiting to be screened by a screener.
+Passenger #6 is waiting to board the plane by an attendant.
+Passenger #3 arrived at the terminal.
+Passenger #4 arrived at the terminal.
+Passenger #4 is waiting at baggage processing for a handler.
+Passenger #4 is waiting to be screened by a screener.
+Passenger #8 arrived at the terminal.
+Passenger #8 is waiting at baggage processing for a handler.
+Passenger #8 is waiting to be screened by a screener.
+Passenger #8 is waiting to board the plane by an attendant.
+Passenger #8 has been seated and relaxes.
+Passenger #10 arrived at the terminal.
+Passenger #10 is waiting at baggage processing for a handler.
+Passenger #10 is waiting to be screened by a screener.
+Passenger #10 is waiting to board the plane by an attendant.
+Passenger #10 has been seated and relaxes.
+Passenger #2 arrived at the terminal.
+Passenger #2 is waiting at baggage processing for a handler.
+Passenger #2 is waiting to be screened by a screener.
+Passenger #2 is waiting to board the plane by an attendant.
+Passenger #2 has been seated and relaxes.
+Passenger #6 has been seated and relaxes.
+Passenger #7 arrived at the terminal.
+Passenger #7 is waiting at baggage processing for a handler.
+Passenger #7 is waiting to be screened by a screener.
+Passenger #7 is waiting to board the plane by an attendant.
+Passenger #7 has been seated and relaxes.
+Passenger #3 is waiting at baggage processing for a handler.
+Passenger #4 is waiting to board the plane by an attendant.
+Passenger #4 has been seated and relaxes.
+Passenger #9 arrived at the terminal.
+Passenger #9 is waiting at baggage processing for a handler.
+Passenger #9 is waiting to be screened by a screener.
+Passenger #9 is waiting to board the plane by an attendant.
+Passenger #9 has been seated and relaxes.
+Passenger #5 arrived at the terminal.
+Passenger #5 is waiting at baggage processing for a handler.
+Passenger #5 is waiting to be screened by a screener.
+Passenger #5 is waiting to board the plane by an attendant.
+Passenger #5 has been seated and relaxes.
+Passenger #3 is waiting to be screened by a screener.
+Passenger #3 is waiting to board the plane by an attendant.
+Passenger #3 has been seated and relaxes.
+All 10 passengers are seated. The plane takes off!
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./airline[27m[9D[27m.[27m/[27ma[27mi[27mr[27ml[27mi[27mn[27me[?2004l
+Usage: ./airline P B S F
+Example: ./airline 100 3 5 2
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./airline abc 2 3 2[27m[19D[27m.[27m/[27ma[27mi[27mr[27ml[27mi[27mn[27me[27m [27ma[27mb[27mc[27m [27m2[27m [27m3[27m [27m2[?2004l
+Usage: ./airline P B S F
+Example: ./airline 100 3 5 2
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7m./airline 10 0 3 2[27m[18D[27m.[27m/[27ma[27mi[27mr[27ml[27mi[27mn[27me[27m [27m1[27m0[27m [27m0[27m [27m3[27m [27m2[?2004l
+Usage: ./airline P B S F
+Example: ./airline 100 3 5 2
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Esmeraldas-MBP.lan/Users/esmeraldaamado/CS4440_Project2/Files[0m[27m[24m[J(base) esmeraldaamado@Esmeraldas-MBP Files % [K[?2004h[7mexit[27m[27me[27mx[27mi[27mt[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+Script done on Sat Jul 25 22:15:55 2026

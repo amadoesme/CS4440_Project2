@@ -9,7 +9,7 @@ CC = gcc
 CFLAGS  = -Wall -Wextra -g -std=gnu11
 
 
-LDFLAGS = -pthread -lrt
+LDFLAGS = -pthread
 
 # Finds all c files in the current directory. 
 SOURCES = $(wildcard *.c)
